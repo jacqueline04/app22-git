@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>segunda aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app-2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/primer.jpg')">
+
+<div data-role="page" id="principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+<h1>Datos de la telefonia celular</h1>
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-list ui-group-theme-b">
+<li class="ui-first-child ui-las ">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Que es un telefono celular</h2>
+<p>se muestra telefono celular</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Historia de la telefonia celular</h2>
+<p>se muestra su historia</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r ">
+<h2>Clasificación de la telefonia celular en méxico</h2>
+<p>Muestra la clasificación</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r ">
+<h2>Compañías en México</h2>
+<p>Muestra compañías</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r ">
+<h2>Telefono Celular del futuro</h2>
+<p>Muestra telefonos celulares</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="imagenes/persona_rosa.ico" width="70" height="70">
+</div>
+<div>
+<h4>Aplicacion Uno</h4>
+<h4>Jacqueline Espinoza Méndez</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>¿Que es un telefono celular?</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Un teléfono celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar. Aunque su principal función es la comunicación de voz, como el teléfono convencional, su rápido desarrollo ha incorporado otras funciones como son cámara fotográfica, agenda, acceso a internet, reproducción de video e incluso GPS y reproductor mp3.</h2>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/primer.jpg',1)"><img src="imagenes/modernos.jpg" width="383" height="500" id="Image16"></a></p>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefonos modernos</h1>
+<div>
+<p>Estos son distintos ejemplos de celulares modernos</p>
+<br>
+</div>
+<div>
+<img src="imagenes/TELEFONO CELULAR.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefonos antiguos</h1>
+<div>
+<p>Estos son distintos ejemplos de telefonos antiguos</p>
+<br>
+</div>
+<div>
+<img src="imagenes/antiguos.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Uno, JEM</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Historia de la telefonia Celular</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>El teléfono celular se remonta a los inicios de la Segunda Guerra Mundial, donde ya se veía que era necesaria la comunicación a distancia, es por eso que la compañía Motorola creó un equipo llamado Handie Talkie H12-16, que es un equipo que permite el contacto con las tropas vía ondas de radio que en ese tiempo no superaban más de 600 Khz.</h2>
+<h2> En 1985 se comenzaron a perfeccionar y amoldar las características de este nuevo sistema revolucionario ya que permitía comunicarse a distancia. Fue así que en los años 1980 se llegó a crear un equipo que ocupaba recursos similares a los Handie Talkie pero que iba destinado a personas que por lo general eran grandes empresarios y debían estar comunicados, es ahí donde se crea el teléfono móvil y marca un hito en la historia de los componentes inalámbricos ya que con este equipo podría hablar a cualquier hora y en cualquier lugar. </h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Evolución del telefono</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/HISTORIA.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefonos antiguos y modernos</h1>
+<div>
+<img src="imagenes/montajemoviles.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Uno, JEM</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Clasificación de la telefonia celular</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2> GAMA BAJA 
+Estos suelen ser pequeños, tienen funciones básicas o
+las que traen ya no las trae
+un smartphone autentico, sus precios son muy economicos, caracteristicas muy limitadas, no reciben soporte, ni
+actualizaciones.</h2>
+<BR> 
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>GAMA BAJA</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/GAMA BAJA.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+</div>
+<H2>GAMA MEDIA
+los telefonos de gama media son aquellos que tienen pantallas de calidad, pero mas pequeñas, resolucion y profundidad de pixeles por pulgada, los procesadores no tiene la potencia de los procesadores que encontramos en gamas superiores y las camara fotográficas son de menos megapixeles.</H2>
+<BR>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>GAMA MEDIA</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/GAMA MEDIA.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+</div>
+<H2>GAMA ALTA
+Los telefonos que pertenecen a esta gama suelen ser la ultima actualizacion de las compañias celulares y lo ultimo en tecnologia celular que podemos obtener.
+</H2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>GAMA ALTA</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/GAMA ALTA.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Uno, JEM</h4>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>TELEFONOS CELULARES DEL FUTURO</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Pantallas flexibles, transparentes o de papel, teléfonos armables y sistemas que permitan comunicarnos con los demás sin usar las redes telefónicas son cosas que convergerán en un futuro que cada vez se ve menos lejano.
+Estos celulares tiene varias cualidades pero una a resaltar es que es capaz de proyectar una imagen de la pantalla y un teclado y con el tiempo, las novedades tecnológicas nos parecen normales y hasta aburridas.
+</h2>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefonos antiguos y modernos</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/futuro.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Telefono con proyector</h1>
+<div>
+<img src="imagenes/poyecta.png" width="50%" height="50%"></div>
+</div>
+</div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Uno, JEM</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Compañías en mexico</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>TELCEL 
+es una marca propiedad de la empresa mexicana. Tiene presencia en todo México y se dedica a ofrecer servicios de telefonía móvil, telefonía fija, servicios de banda ancha, entre otros servicios.</h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>TELCEL</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/telcel.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+<h2>MOVISTAR
+conocida simplemente como Movistar, es el primer operador de telefonía fija, telefonía móvil, televisión por suscripción. Tiene su origen en la marca comercial con la que Telefónica Móviles comenzó a operar el servicio de telefonía móvil digital (GSM), el 25 de julio de 1995.</h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>MOVISTAR</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/movistar.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+<H2>AT&T
+(American Telephone and Telegraph) es una compañía estadounidense de telecomunicaciones.2 Provee servicios de voz, video, datos e Internet a negocios, clientes y agencias del gobierno. Durante su larga historia ha sido, en ocasiones, la compañía telefónica más grande del mundo y el operador de televisión por cable más grande de los Estados Unidos, llegando a ser clasificada como un monopolio</H2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>AT&T</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/at&t.png" width="50%" height="50%"></div>
+</div>
+</div>
+<H2>UNEFÓN
+ es una compañía mexicana de telefonía móvil propiedad de AT&T, la cual se dedica a ofrecer únicamente el esquema de cobro de prepago. Fue fundada por Ricardo Salinas Pliego en 1998 </H2>
+ <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>UNEFÓN</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/unefon.png" width="50%" height="50%"></div>
+</div>
+</div>
+ <H2>IUSACELL
+es una empresa mexicana de telecomunicaciones, subsidiaria de la empresa estadounidense AT&T, cuya sede se encuentra en la Ciudad de México. Entre sus principales servicios está la telefonía móvil, el internet móvil, servicios de banda ancha móvil, entre otros.</H2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>IUSACELL</h1>
+<div>
+<br>
+</div>
+<div>
+<img src="imagenes/iusacel.jpg" width="50%" height="50%"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Uno, JEM</h4>
+</div>
+</div>
+</body>
+</html>
